@@ -1,0 +1,253 @@
+{
+  "id": "ce561409-b0bb-4c05-be76-b921195e6914",
+  "revision": 0,
+  "last_node_id": 6,
+  "last_link_id": 5,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "Xoxxox_LogTxt",
+      "pos": [
+        797.58203125,
+        478.7421875
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txtreq",
+          "type": "STRING",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Xoxxox_LogTxt"
+      }
+    },
+    {
+      "id": 3,
+      "type": "Xoxxox_GetTxt",
+      "pos": [
+        684.5625,
+        314.33203125
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_GetTxt"
+      }
+    },
+    {
+      "id": 2,
+      "type": "Xoxxox_SetTxt",
+      "pos": [
+        569.1328125,
+        152.27734375
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txtreq",
+          "type": "STRING",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_SetTxt"
+      }
+    },
+    {
+      "id": 5,
+      "type": "Xoxxox_IniFlw",
+      "pos": [
+        348.5703125,
+        74.5078125
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "random",
+          "type": "INT",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_IniFlw"
+      }
+    },
+    {
+      "id": 6,
+      "type": "PrimitiveInt",
+      "pos": [
+        22.30859375,
+        90.3984375
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        -597750672802260,
+        "randomize"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "Xoxxox_PutTxt",
+      "pos": [
+        193.484375,
+        261.10546875
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_PutTxt"
+      },
+      "widgets_values": [
+        "xyz"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      3,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      6,
+      0,
+      5,
+      0,
+      "INT"
+    ],
+    [
+      5,
+      5,
+      0,
+      1,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.18.6"
+  },
+  "version": 0.4
+}
