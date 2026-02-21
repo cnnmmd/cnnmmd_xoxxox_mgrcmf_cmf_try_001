@@ -46,7 +46,7 @@
       "mode": 0,
       "inputs": [
         {
-          "name": "keydat",
+          "name": "keymmd",
           "type": "STRING",
           "link": 2
         }
